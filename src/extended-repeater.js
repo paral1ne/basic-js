@@ -16,14 +16,14 @@ const { NotImplementedError } = require("../extensions/index.js");
  *
  */
 function repeater(str, options) {
-  let str = "";
+  let string = "";
   for (let i = 0; i < options.repeatTimes; i++) {
-    str += `${str}${options.addition}${options.additionSeparator}${options.addition}`;
+    string += `${str}${options.addition}${options.additionSeparator}${options.addition}`;
     if (i < options.repeatTimes - 1) {
-      str += options.separator;
+      string += options.separator;
     }
   }
-  return str;
+  return string;
 }
 
 module.exports = {
